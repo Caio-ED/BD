@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Projetos/BancodeDados/aula.db" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><current_tab id="3"/></window><tab_structure><column_width id="0" width="165"/><column_width id="1" width="0"/><column_width id="2" width="73"/><column_width id="3" width="420"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="0" parent="0"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="carros"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="Carros" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk=""><sort/><column_widths/><filter_values/><display_formats/><hidden_columns/><plot_y_axes/></table><table schema="main" name="carros" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk=""><sort/><column_widths><column index="1" value="125"/><column index="3" value="112"/></column_widths><filter_values/><display_formats/><hidden_columns/><plot_y_axes/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">CREATE table carros(
+nome varchar,
+cor varchar,
+ano INTEGER,
+preco decimal);</sql><sql name="SQL 2">INSERT INTO Carros(nome, cor, ano, preco)
+	values('carro 10','prata', 1995, 22.000);</sql><sql name="SQL 3">SELECT * from Carros where ano &gt;= 2000;
+-- * é para selecionar todas as colunas
+-- where serve de filtro</sql><sql name="SQL 4">UPDATE Carros set nome = 'Novo nome' WHERE ano &gt; 2000;
+-- nunca esquecer do where, é serio gera demissa :(</sql><sql name="SQL 5">DELETE FROM Carros where cor = 'vinho';</sql><current_tab id="4"/></tab_sql></sqlb_project>
